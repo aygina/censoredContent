@@ -1,10 +1,22 @@
-let arr = [];
-
 function submit() {
-    if (document.getElementById('comment').value != '') {
-        arr.push(document.getElementById('comment').value);
-    }
+    let commentSect = document.querySelector('#commentSection');
+    let comment = document.getElementById('comment').value + '\n';
     document.getElementById('comment').value = '';
-    commentSection.innerHTML = '' + arr + '\n';
-    console.log(arr + '\n');
+
+    commentSect.append(comment);
+    checkSpam(str);
 }
+
+function checkSpam(str) {
+    let comment = document.getElementById('comment').value;
+    
+}
+
+// функция смотретьСпам () {
+//   Записываешь сообщение, которое ввёл пользователь
+//   Меняешь регистр
+//   Создаёшь переменную, которая содержит спам (нужны флаги)
+//   Заменяешь спам, если он есть
+//   Добавляешь строку в чат
+//   Очищаешь поле ввода
+// }

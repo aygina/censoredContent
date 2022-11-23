@@ -20,9 +20,9 @@
             <p>Сделайте интерфейс для анонимных комментариев со спамфильтром. Необходимо реализовать отображение и
                 добавление сообщений, а также функцию checkSpam(str), заменяющую 'viagra' или 'XXX' на ***. Функция
                 должна быть нечувствительна к регистру.</p>
-            <div class="commentSection" id="commentSection"></div>
+            <textarea id="commentSection" readonly></textarea>
             <div class="comment">
-                <input type="text" id="comment">
+                <input type="text" id="comment" placeholder="Оставьте комментарий">
                 <button onclick="submit();">Отправить</button>
             </div>
         </div>
